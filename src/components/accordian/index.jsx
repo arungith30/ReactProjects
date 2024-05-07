@@ -10,24 +10,29 @@ export default function Accordian() {
  const [enableMultiSelection, setEnableMultiSelection] = useState(false);
   const [multiple, setMultiple] = useState([]);
 
-  function handleSingleSelection(getCurrentId) {
+    function handleSingleSelection(getCurrentId) {
     setSelected(getCurrentId === selected ? null : getCurrentId);
-  
-    console.log(selected)
-    console.log(getCurrentId)}
-  
+    }
 
   function handleMultiSelection(getCurrentId) {
+   
+  
     let cpyMutiple = [...multiple];
+    console.log(cpyMutiple);
     const findIndexOfCurrentId = cpyMutiple.indexOf(getCurrentId);
 
-    console.log(findIndexOfCurrentId);
+    
     if (findIndexOfCurrentId === -1) cpyMutiple.push(getCurrentId);
     else cpyMutiple.splice(findIndexOfCurrentId, 1);
 
     setMultiple(cpyMutiple);
+
+    console.log(findIndexOfCurrentId);
     console.log(getCurrentId);
-    console.log(cpyMutiple.indexOf(getCurrentId))
+    console.log(cpyMutiple.indexOf(getCurrentId));
+   
+    console.log(cpyMutiple);
+    console.log(multiple);
     
   }
 
