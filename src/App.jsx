@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 
 import './App.css'
-import StarRating from './components/star-rating'
+import RandomColor from './components/random-color'
 
 function App() {
   
@@ -10,8 +10,8 @@ function App() {
     <>
       <div>
 {/* <Accordian/> */}
-{/* <RandomColor/> */}
-<StarRating />
+<RandomColor/>
+{/* <StarRating /> */}
 
        </div>
     </>
