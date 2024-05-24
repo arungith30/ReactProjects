@@ -11,7 +11,7 @@ const RandomColor = () => {
     let G= Math.floor(Math.random()*256);
     let B= Math.floor(Math.random()*256);
 
-      setColor(`rgb(${R},${G}, ${B})`);
+    setColor(`rgb(${R},${G}, ${B})`);
     }
 
   return (

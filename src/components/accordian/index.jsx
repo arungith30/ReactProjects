@@ -10,18 +10,24 @@ import "./styles.css"
   const [multiple,setMultiple]=useState([]);
 
 
-  function onSelect (itemid){
+  function onSelect (itemid)
+    {
       setSelect(itemid==select ? null : itemid);
       console.log(select);
-        }
-  const enabledismultiselection=()=>{
+    }
+
+  const enabledismultiselection=()=>
+    {
     (enablemultiselection=== true)? setEnablemultiselection(false):setEnablemultiselection(true)
-        }
-  function onMultiSelection(itemsid){
+    }
+
+  function onMultiSelection(itemsid)
+  {
     let copymultiple=[...multiple]
     let currentindex=copymultiple.indexOf(itemsid);
     console.log(currentindex)
-    if(currentindex===-1){
+    if(currentindex===-1)
+    {
       copymultiple.push(itemsid)
     }
     else
@@ -36,10 +42,11 @@ import "./styles.css"
       {enablemultiselection===true ? 
       "Disable multiselection" : "Enable multiselection"} 
     </button>
+    <div className="accordian">
       {data.map((items)=>
         {
           return(
-        <div   key={items.id}>
+        <div className="item" key={items.id}>
           
           <div className="title" 
           
@@ -49,7 +56,7 @@ import "./styles.css"
           : ()=>onSelect(items.id)} >
           {items.question}
           </div>
-          <div>
+          <div className="acc-content">
             {enablemultiselection
                 ? multiple.indexOf(items.id) !== -1  &&(
                     <div className="acc-content ">{items.answer}</div> )
@@ -61,7 +68,7 @@ import "./styles.css"
 
         })
       }
-  
+    </div>
    </div>
  )}
  
