@@ -12,7 +12,10 @@ function App() {
       <div>
 {/* <Accordian/> */}
 {/* <RandomColor/> */}
-<ImageSlider/>
+<ImageSlider  url={"https://picsum.photos/v2/list"}
+              page={"1"}
+              limit={"10"}
+/>
 {/* <StarRating /> */}
 
        </div>
