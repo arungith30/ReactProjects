@@ -1,6 +1,7 @@
 // import { useState } from 'react'
  
 import './App.css'
+// import Accordian from './components/accordian/index'
 import LoadMoreData from './components/load-data/index'
 
 

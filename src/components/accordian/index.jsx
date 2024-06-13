@@ -13,7 +13,7 @@ import "./styles.css"
   function onSelect (itemid)
     {
       setSelect(itemid==select ? null : itemid);
-      console.log(select);
+      
     }
 
   const enabledismultiselection=()=>
