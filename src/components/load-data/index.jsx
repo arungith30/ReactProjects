@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import "./styles.css";
+import "./style.css";
 
 export default function LoadMoreData() {
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,8 @@ export default function LoadMoreData() {
   }, [count]);
 
   useEffect(() => {
-    if (products && products.length === 100) setDisableButton(true);
+    if (products && products.length === 100) 
+      setDisableButton(true);
   }, [products]);
 
   if (loading) {
@@ -57,6 +58,7 @@ export default function LoadMoreData() {
       </div>
       <div className="button-container">
         <button disabled={disableButton} onClick={() => setCount(count + 1)}>
+          
           Load More Products
         </button>
         {disableButton ? <p>You have reached to 100 products</p> : null}
