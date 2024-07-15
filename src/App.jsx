@@ -2,8 +2,9 @@
  
 import './App.css'
 // import Accordian from './components/accordian/index'
-import LoadMoreData from './components/load-data/index'
-
+// import LoadMoreData from './components/load-data/index'
+import TreeView from './components/tree-view/index'
+import menus from "./components/tree-view/data";
 
 function App() {
   
@@ -19,7 +20,8 @@ function App() {
 /> */}
 {/* <StarRating /> */}
 
-<LoadMoreData/>
+{/* <LoadMoreData/> */}
+<TreeView menus={menus}/>
 
        </div>
     </>
