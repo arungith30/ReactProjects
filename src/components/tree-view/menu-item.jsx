@@ -10,9 +10,11 @@ export default function MenuItem({ item }) {
       ...displayCurrentChildren,
       [getCurrentlabel]: !displayCurrentChildren[getCurrentlabel],
     });
+    console.log(getCurrentlabel)
   }
 
   console.log(displayCurrentChildren);
+  
 
   return (
     <li >
