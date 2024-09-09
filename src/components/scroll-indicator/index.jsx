@@ -41,7 +41,7 @@ const ScrollIndicator = ({url}) => {
     setScrollPercentage((howMuchScrolled / height) * 100);
   }
 
-  useEffect(() => {
+  useEffect(() => { 
     window.addEventListener("scroll", handleScrollPercentage);
 
     return()=>{window.removeEventListener("scroll",()=>{   })};
