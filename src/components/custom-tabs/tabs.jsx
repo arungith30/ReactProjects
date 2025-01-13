@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 export default function Tabs({ tabsContent, onChange }) {
@@ -22,7 +23,8 @@ export default function Tabs({ tabsContent, onChange }) {
         ))}
       </div>
       <div className="content" style={{ color: "red" }}>
-        {tabsContent[currentTabIndex] && tabsContent[currentTabIndex].content}
+        {/* // eslint-disable-next-line react/prop-types */}
+        {tabsContent[currentTabIndex].content}
       </div>
     </div>
   );

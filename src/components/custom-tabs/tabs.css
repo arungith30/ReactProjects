@@ -21,7 +21,8 @@
 }
 
 .tab-item.active {
-  border-color: #000;
+  border: 1px solid;
+  border-color: #000000;
   background: #a1d600;
   color: #fff;
 }
